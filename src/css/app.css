@@ -178,7 +178,7 @@ header {
 
 }
 
-.section__third .section__third--h2 {
+.section__third--h2 {
 	margin-bottom: 100px;
 
 	font-family: "Raleway", sans-serif;
@@ -199,20 +199,8 @@ header {
 	column-gap: 185px;
 }
 
-/* .section__third__content__div1 {
-	background-color: yellow;
-}
-
-.section__third__content__div2 {
-	background-color: red;
-}
-
-
-.section__third__content__div3 {
-	background-color: blue;
-} */
-
 .color-circle {
+	margin-bottom: 13px;
 	width: 62.71px;
 	height: 62.71px;
 	background-color: orange;
@@ -242,6 +230,7 @@ header {
 }
 
 .section__third--p-large {
+	margin-bottom: 19px;
 	line-height: 20px;
 	font-family: "Raleway", sans-serif;
 	font-size: 20px;
@@ -254,11 +243,7 @@ header {
 .section__third--p-small {
 	line-height: 20px;
 	font-family: "Raleway", sans-serif;
-
-
-
 	font-size: 17px;
-	letter-spacing: 6px;
 	text-align: center;
 	font-weight: 400;
 	color: var(--color-grey);
@@ -292,7 +277,16 @@ header {
 	background-color: yellow;
 }
 
+.benefity--h2 {
 
+	font-family: "Raleway", sans-serif;
+	line-height: 42px;
+	font-size: 36px;
+
+	text-align: center;
+	font-weight: 400;
+	color: var(--color-black);
+}
 
 
 
