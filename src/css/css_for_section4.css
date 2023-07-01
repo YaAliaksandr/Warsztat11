@@ -250,156 +250,196 @@ header {
 }
 
 .benefity {
-	min-width: 100%;
-
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	/* align-content: center; */
+	width: 1626px;
+	height: 1395px;
+	/* max-width: 100%; */
+	/* width: 80%;
+	margin: 0 auto; */
+	/* display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center; */
 	background-color: gray;
-	row-gap: 37px;
 	/*var(--color-light-grey);*/
 	/* row-gap: 37px; */
-
+	position: relative;
 }
 
+.benefity-grid-container {
+	position: absolute;
+	left: 251px;
+	top: 105px;
+	display: grid;
+	grid-template-areas: "div1"
+		"div2"
+		"div3";
+	grid-template-rows: repeat(3, 370px);
+	grid-template-columns: 1124px;
+	row-gap: 37px;
+
+	/* margin-top: 105px; */
+	/* margin-block: 105px; */
+	/* margin-inline: auto; */
+}
 
 
 .center__content {
-	width: 1124px;
-	height: 370px;
-	background-color: var(--color-white);
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
-	border: 1px solid #E8E9ED;
 	border-radius: 5px;
-}
-
-.div1 {
-	margin-top: 105px;
-}
-
-.div3__trumpet {
-	margin-bottom: 105px;
-}
-
-.benefity--h2 {
-
-	font-family: "Raleway", sans-serif;
-	line-height: calc(36/42);
-	margin-bottom: 30px;
-	font-size: 36px;
-	text-align: left;
-	font-weight: 400;
-	color: var(--color-black);
-}
-
-.section--p {
-	text-align: left;
-	font-family: "Open Sans", sans-serif;
-	line-height: calc(16/22);
-
-	font-size: 16px;
-	text-align: left;
-	font-weight: 400;
-	color: var(--color-black);
-
 
 }
 
+.center__content.div1 {
+	background-color: white;
+	grid-area: div1;
+}
 
+.center__content.div2 {
+	background-color: blue;
+	grid-area: div2;
+}
 
+.center__content.div3.trumpet {
+	background-color: yellow;
+	grid-area: div3;
+}
 
 .benefity__content--text {
-	/* display: flex; */
-	/* margin-inline: 35px; */
+	width: 50%;
+	margin-inline: 35px;
+}
+
+.benefity__content--img-div {
+	width: 50%;
+	position: relative;
+	bottom: -38px;
+	/* height: 219px; */
+	/* background-image: url(/src/images/Macbook.png); */
+	/* background-position: center; */
+	/* background-size: cover; */
 }
 
 .benefity__content-img {
-	position: absolute;
+	height: 219px;
+	width: 386px;
+	position: relative;
+	z-index: 10;
 }
+
+
+
+
+/* .benefity__content-img:after {
+	content: '';
+	width: 255px;
+	height: 255px;
+	background-color: var(--color-redish);
+	display: inline-block;
+	transform: rotate(45deg);
+	border-radius: 41px;
+	position: absolute;
+} */
 
 .benefity__content-div {
-	position: absolute;
-	display: inline-block;
-	z-index: 1;
-}
-
-.benefity__content-img {
-	position: relative;
-	z-index: 2;
-}
-
-.benefity__content--img {
-	position: relative;
-}
-
-.benefity__content-img.macbook-img {
-	width: 386px;
-	height: 219px;
-	/* position: relative; */
-}
-
-.benefity__content-div.macboock-bg {
 	width: 190px;
 	height: 190px;
 	background-color: var(--color-redish);
+
 	transform: rotate(45deg);
 	border-radius: 41px;
-	left: 56%;
-	bottom: 25%;
+	position: absolute;
+	left: 40%;
+	bottom: 30%;
+
 }
 
-.benefity__content--img.iphone__block {
-	order: -1;
-	left: 70px;
-}
 
-.benefity__content-img.iphone-img {
+.benefity__content-img.iphone--img {
 	width: 426px;
 	height: 328px;
-	bottom: -26px;
+	position: absolute;
+	top: 34px;
+	left: 80px;
+
 }
 
-.benefity__content-div.iphone-bg {
+.benefity__content--img-div.iphone__block {
+	order: -1;
+	align-self: stretch;
+	bottom: 0;
+}
+
+.benefity__content-div.iphone--div {
 	width: 320px;
 	height: 320px;
 	background-color: var(--color-primary);
+
 	border-radius: 50%;
-	left: 0px;
-	bottom: 0px;
+	position: absolute;
+	left: 70px;
+	bottom: 38px;
 }
 
-.benefity__content-img.iphone-img {
-	width: 426px;
-	height: 328px;
-	bottom: -26px;
+.center__content.div3.trumpet {
+	/* column-gap: 61px; */
 }
 
-.center__content.div3__trumpet {
-	column-gap: 61px;
+.benefity__content--img-div.trumpet__block {
+	width: 440px;
+	align-self: stretch;
+	bottom: 0;
+	position: relative;
+	left: -115px;
 }
 
-.benefity__content--img.trumpet__block {
-	left: -112px;
-	bottom: -81px;
-}
-
-.benefity__content-img.trumpet-img {
-	width: 296px;
-	height: 208px;
-	left: 88px;
-	bottom: 58px;
-}
-
-.benefity__content-div.trumpet-bg {
-	width: 441px;
-	height: 371px;
+.benefity__content-div.trumpet--div {
+	width: 440px;
+	height: 370px;
 	background-color: var(--color-gren);
+	position: absolute;
 	transform: rotate(0);
 	border-radius: 5px;
-	bottom: 0px;
-	left: 0px;
+	top: 0;
+	left: 0;
+}
+
+.benefity__content-img.trumpet--img {
+	width: 296px;
+	height: 208px;
+	position: absolute;
+	left: 6%;
+	bottom: 20%;
+
+
+}
+
+
+
+
+
+
+
+
+/* .div1 {
+	background-color: red;
+} */
+/* .div2 {
+	background-color: blue;
+}
+.div3 {
+	background-color: yellow;
+}*/
+
+.benefity--h2 {
+
+	font-family: "Raleway",
+		sans-serif;
+	line-height: 42px;
+	font-size: 36px;
+
+	text-align: center;
+	font-weight: 400;
+	color: var(--color-black);
 }
