@@ -265,7 +265,7 @@ header {
 
 	justify-content: center;
 	align-items: center;
-	background-color: gray;
+	background-color: var(--color-light-grey);
 	row-gap: 37px;
 	/*var(--color-light-grey);*/
 	/* row-gap: 37px; */
@@ -433,6 +433,10 @@ header {
 	border-radius: 5px;
 	bottom: 0px;
 	left: 0px;
+}
+
+.pricing {
+	margin-bottom: 180px;
 }
 
 .pricing--h2 {
@@ -624,4 +628,116 @@ header {
 .section__link.pricing {
 	font-size: 13px;
 	line-height: calc(41/13);
+	position: absolute;
+	bottom: -173px;
+}
+
+.contact__container {
+	margin-inline: auto;
+	width: 896px;
+	height: 376px;
+	/* background-color: lightcyan; */
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+
+
+}
+
+/* .right-panel {
+	background-color: pink;
+} */
+
+.left-part--header {
+	margin-bottom: 22px;
+	line-height: calc(57/49);
+	font-family: "Raleway", sans-serif;
+	font-size: 49px;
+	text-align: left;
+	font-weight: 400;
+	color: var(--color-black);
+
+}
+
+.left-part--paragraph {
+	margin-bottom: 42px;
+	line-height: calc(22/16);
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	text-align: left;
+	font-weight: 400;
+	color: var(--color-black);
+}
+
+.left-pannel__phone-email {
+	margin-bottom: 42px;
+	line-height: calc(22/16);
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	text-align: left;
+	font-weight: 600;
+	color: var(--color-grey);
+}
+
+.phone-icon,
+.email-icon {
+
+	margin-right: 10px;
+}
+
+.phone-icon {
+	margin-left: 20px;
+}
+
+#user-name,
+#user-email {
+	width: 440px;
+
+	border-style: none;
+	border-bottom-style: inset;
+	margin-bottom: 42px;
+	font-size: 32px;
+}
+
+#user-email {
+	margin-bottom: 30px;
+}
+
+
+.user-name,
+.user-email {
+	/* margin-bottom: 42px; */
+	line-height: calc(15/11);
+	font-family: "Open Sans", sans-serif;
+	font-size: 11px;
+	text-align: left;
+	font-weight: 700;
+	color: var(--color-primary);
+	letter-spacing: 3.28px;
+}
+
+#agreement-yes {
+	width: 24px;
+	height: 24px;
+}
+
+#agreement {
+	width: 405px;
+	height: 108px;
+	line-height: calc(17/12);
+	font-family: "Open Sans", sans-serif;
+	font-size: 12px;
+	text-align: left;
+	font-weight: 400;
+	color: var(--color-grey);
+	margin-bottom: 20px;
+	border-style: none;
+}
+
+.send {
+	width: 226px;
+	height: 57px;
+	color: var(--color-white);
+	margin-inline: auto 0;
+	margin-bottom: 59px;
 }

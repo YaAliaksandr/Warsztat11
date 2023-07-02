@@ -6,12 +6,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
-		href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway:wght@300;400;700;800&display=swap"
+		href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Raleway:wght@300;400;700;800&display=swap"
 		rel="stylesheet">
-
-
 
 	<link rel="stylesheet" href="/src/css/reset.css">
 	<link rel="stylesheet" href="/src/css/app.css">
@@ -178,6 +178,39 @@ daily</pre>
 			</div>
 
 		</div>
+	</section>
+	<section class="contact-form">
+<div class="contact__container">
+	<div class="contact__left-pannel">
+		<h2 class="left-part--header">Any questions?</h2>
+		<p class="left-part--paragraph">Leave your email address or call us!</p>
+		<div class="left-pannel__phone-email">
+			<img class="email-icon" src="/src/images/Mail-icon.svg" alt="">
+			<a >info@bestshop.xyz</a>
+			<img class="phone-icon" src="/src/images/Phone-icon.svg" alt="">
+			<a >123 456 789</a>
+		</div>
+	</div>
+	<div class="right-panel">
+		<form action="" method="post" >
+			<label class="user-name"for="user-name">NAME<br>
+			<input type="text" name="user name" id="user-name">
+			<br>
+		</label>
+			<label class="user-email" for="user-email">EMAIL<br>
+				<input type="email" name="user email" id="user-email">
+				<br>
+			</label>
+
+			<label for="agreement-yes">
+				<input type="checkbox" name="answer is positive" id="agreement-yes" value="agree" checked ></label>
+				
+				<textarea class="agreement-text" type="text" name="user answer for agreement" id="agreement" readonly>I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliaments and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</textarea>
+		<input class="btn__imitation send" type="submit" value="Send">	
+		</form>
+	</div>
+	
+</div>
 	</section>
 
 
